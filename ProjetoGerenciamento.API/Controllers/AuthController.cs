@@ -21,11 +21,11 @@ namespace ProjetoGerenciamento.API.Controllers
             // Simulação de validação e atribuição de roles
             string role;
 
-            if (request.Username == "admin" && request.Password == "password")
+            if (request.Username == "admin" && request.Password == "123")
             {
                 role = "Admin";
             }
-            else if (request.Username == "user" && request.Password == "password")
+            else if (request.Username == "user" && request.Password == "123")
             {
                 role = "Usuario";
             }
