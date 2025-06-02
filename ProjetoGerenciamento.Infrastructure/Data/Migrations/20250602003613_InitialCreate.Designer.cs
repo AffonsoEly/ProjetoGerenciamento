@@ -9,10 +9,10 @@ using ProjetoGerenciamento.Infrastructure.Data;
 
 #nullable disable
 
-namespace ProjetoGerenciamento.Infrastructure.Migrations
+namespace ProjetoGerenciamento.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ProjetoDbContext))]
-    [Migration("20250601190754_InitialCreate")]
+    [Migration("20250602003613_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

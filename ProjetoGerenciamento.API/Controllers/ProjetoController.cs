@@ -55,5 +55,15 @@ namespace ProjetoGerenciamento.API.Controllers
             if (!result) return BadRequest("Não é possível excluir o projeto ou projeto não encontrado");
             return NoContent();
         }
+        [Authorize(Roles = "Admin")] // Apenas Admin pode criar projetos
+        [HttpPost("novo")]
+        public async Task<ActionResult> NovoProjeto([FromBody] ProjetoDto projetoDto)
+        {
+            var result = await _projetoService.InserirAsync(projetoDto);
+            if (!result)
+                return BadRequest("Erro ao inserir projeto");
+
+            return CreatedAtAction(nameof(Get), new { id = projetoDto.Id }, projetoDto);
+        }
     }
 }

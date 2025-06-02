@@ -8,7 +8,7 @@ using ProjetoGerenciamento.Infrastructure.Data;
 
 #nullable disable
 
-namespace ProjetoGerenciamento.Infrastructure.Migrations
+namespace ProjetoGerenciamento.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ProjetoDbContext))]
     partial class ProjetoDbContextModelSnapshot : ModelSnapshot

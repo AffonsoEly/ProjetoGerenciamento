@@ -14,5 +14,6 @@ namespace ProjetoGerenciamento.Application.DTOs
         public decimal OrcamentoTotal { get; set; }
         public StatusProjeto Status { get; set; }
         public RiscoProjeto ClassificacaoRisco { get; set; }
+        
     }
 }
